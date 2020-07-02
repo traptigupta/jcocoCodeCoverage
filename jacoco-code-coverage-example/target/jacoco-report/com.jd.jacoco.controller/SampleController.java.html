@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SampleController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCo Coverage Report</a> &gt; <a href="index.source.html" class="el_package">com.jd.jacoco.controller</a> &gt; <span class="el_source">SampleController.java</span></div><h1>SampleController.java</h1><pre class="source lang-java linenums">package com.jd.jacoco.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+<span class="fc" id="L8">public class SampleController {</span>
+
+	@GetMapping(path = &quot;/test/{param}&quot;)
+	public String codeCoverageMethod(@PathVariable int param) {
+
+<span class="pc bpc" id="L13" title="3 of 4 branches missed.">		if (param &lt; 10 &amp;&amp; param &gt; 5 ) {</span>
+<span class="nc" id="L14">			return callingThisMethodwithLessThan10(param);</span>
+		}
+<span class="pc bpc" id="L16" title="3 of 4 branches missed.">		else  if (param &lt; 50 &amp;&amp; param &gt; 5){</span>
+<span class="nc" id="L17">			return callingAnotherMethodwithLessThan50(param);</span>
+		}
+<span class="pc bpc" id="L19" title="2 of 4 branches missed.">		else  if (param &lt;100 &amp;&amp; param &gt; 5){</span>
+<span class="fc" id="L20">			return callingThisMethodwithLessThan100(param);</span>
+		}
+<span class="nc bnc" id="L22" title="All 4 branches missed.">		else  if (param &lt;150 &amp;&amp; param &gt; 5){</span>
+<span class="nc" id="L23">			return callingAnotherMethodwithLessThan150(param);</span>
+		}
+<span class="nc bnc" id="L25" title="All 4 branches missed.">		else  if (param &lt;200 &amp;&amp; param &gt; 5){</span>
+<span class="nc" id="L26">			return callingThisMethodwithLessThan200(param);</span>
+		}
+		else
+<span class="nc" id="L29">			return callingLowestNumberMethod(param);</span>
+		
+		
+	}
+
+	private String callingThisMethodwithLessThan10(int param) {
+
+<span class="nc" id="L36">		System.out.println(&quot;Calling this method with param Less Than 10&quot;);</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">		if (param &gt; 10) {</span>
+<span class="nc" id="L38">			System.out.println(&quot;This code cannot be called..&quot;);</span>
+		}
+<span class="nc" id="L40">		return &quot;Calling this method with param LessThan 10.&quot;;</span>
+	}
+	private String callingAnotherMethodwithLessThan50(int param) {
+
+<span class="nc" id="L44">		System.out.println(&quot;Calling this method with param Less Than 50&quot;);</span>
+<span class="nc bnc" id="L45" title="All 2 branches missed.">		if (param &gt; 50) {</span>
+<span class="nc" id="L46">			System.out.println(&quot;This code cannot be called..&quot;);</span>
+		}
+<span class="nc" id="L48">		return &quot;Calling this method with param LessThan 50.&quot;;</span>
+	}
+	private String callingThisMethodwithLessThan100(int param) {
+
+<span class="fc" id="L52">		System.out.println(&quot;Calling this method with param Less Than 100&quot;);</span>
+<span class="pc bpc" id="L53" title="1 of 2 branches missed.">		if (param &gt; 100) {</span>
+<span class="nc" id="L54">			System.out.println(&quot;This code cannot be called..&quot;);</span>
+		}
+<span class="fc" id="L56">		return &quot;Calling this method with param LessThan 100.&quot;;</span>
+	}
+	
+	private String callingAnotherMethodwithLessThan150(int param) {
+
+<span class="nc" id="L61">		System.out.println(&quot;Calling this method with param Less Than 150&quot;);</span>
+<span class="nc bnc" id="L62" title="All 2 branches missed.">		if (param &gt; 150) {</span>
+<span class="nc" id="L63">			System.out.println(&quot;This code cannot be called..&quot;);</span>
+		}
+<span class="nc" id="L65">		return &quot;Calling this method with param LessThan 150.&quot;;</span>
+	}
+	private String callingThisMethodwithLessThan200(int param) {
+
+<span class="nc" id="L69">		System.out.println(&quot;Calling this method with param Less Than 200&quot;);</span>
+<span class="nc bnc" id="L70" title="All 2 branches missed.">		if (param &gt; 200) {</span>
+<span class="nc" id="L71">			System.out.println(&quot;This code cannot be called..&quot;);</span>
+		}
+<span class="nc" id="L73">		return &quot;Calling this method with param LessThan 200.&quot;;</span>
+	}
+	private String callingLowestNumberMethod(int param) {
+
+<span class="nc" id="L77">		System.out.println(&quot;Calling lowest number method.&quot;);</span>
+<span class="nc" id="L78">		return &quot;Calling lowest number method.&quot;;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

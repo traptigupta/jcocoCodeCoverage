@@ -1,0 +1,3 @@
+com\jd\jacoco\controller\SampleController.class
+com\jd\jacoco\JacocoCodeCoverageExampleApplication.class
+com\jd\jacoco\configure\AutoConfigure.class

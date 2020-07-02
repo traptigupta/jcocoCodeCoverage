@@ -1,0 +1,468 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User calls web service test to check the logic with less than 10",
+        "description": "",
+        "id": "get-test-method-with-all-logics;user-calls-web-service-test-to-check-the-logic-with-less-than-10",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1139616600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a test method request prepared with 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 36
+                }
+              ],
+              "location": "testStep.aTestMethodRequestPreparedWith(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2278002600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a user retrieves the test method",
+            "match": {
+              "location": "testStep.aUserRetrievesTheTestMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "testStep.the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6073200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "response includes this \"Calling this method with param LessThan 10.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calling this method with param LessThan 10.",
+                  "offset": 24
+                }
+              ],
+              "location": "testStep.responseIncludesThis(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "User calls web service test to check the logic with less than 50",
+        "description": "",
+        "id": "get-test-method-with-all-logics;user-calls-web-service-test-to-check-the-logic-with-less-than-50",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 529000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a test method request prepared with 49",
+            "match": {
+              "arguments": [
+                {
+                  "val": "49",
+                  "offset": 36
+                }
+              ],
+              "location": "testStep.aTestMethodRequestPreparedWith(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 42269700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "a user retrieves the test method",
+            "match": {
+              "location": "testStep.aUserRetrievesTheTestMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "testStep.the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 812000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "response includes this \"Calling this method with param LessThan 50.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calling this method with param LessThan 50.",
+                  "offset": 24
+                }
+              ],
+              "location": "testStep.responseIncludesThis(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "User calls web service test to check the logic with less than 100",
+        "description": "",
+        "id": "get-test-method-with-all-logics;user-calls-web-service-test-to-check-the-logic-with-less-than-100",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 872600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "a test method request prepared with 99",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99",
+                  "offset": 36
+                }
+              ],
+              "location": "testStep.aTestMethodRequestPreparedWith(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36555300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "a user retrieves the test method",
+            "match": {
+              "location": "testStep.aUserRetrievesTheTestMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "testStep.the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 455100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "response includes this \"Calling this method with param LessThan 100.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calling this method with param LessThan 100.",
+                  "offset": 24
+                }
+              ],
+              "location": "testStep.responseIncludesThis(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "User calls web service test to check the logic with less than 150",
+        "description": "",
+        "id": "get-test-method-with-all-logics;user-calls-web-service-test-to-check-the-logic-with-less-than-150",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 669600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "a test method request prepared with 149",
+            "match": {
+              "arguments": [
+                {
+                  "val": "149",
+                  "offset": 36
+                }
+              ],
+              "location": "testStep.aTestMethodRequestPreparedWith(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 44583500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "a user retrieves the test method",
+            "match": {
+              "location": "testStep.aUserRetrievesTheTestMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "testStep.the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1099100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "response includes this \"Calling this method with param LessThan 150.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calling this method with param LessThan 150.",
+                  "offset": 24
+                }
+              ],
+              "location": "testStep.responseIncludesThis(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "User calls web service test to check the logic with less than 200",
+        "description": "",
+        "id": "get-test-method-with-all-logics;user-calls-web-service-test-to-check-the-logic-with-less-than-200",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 500600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "a test method request prepared with 199",
+            "match": {
+              "arguments": [
+                {
+                  "val": "199",
+                  "offset": 36
+                }
+              ],
+              "location": "testStep.aTestMethodRequestPreparedWith(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35719100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "a user retrieves the test method",
+            "match": {
+              "location": "testStep.aUserRetrievesTheTestMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "testStep.the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 408900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "response includes this \"Calling this method with param LessThan 200.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calling this method with param LessThan 200.",
+                  "offset": 24
+                }
+              ],
+              "location": "testStep.responseIncludesThis(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "User calls web service test to check the logic with less than 5",
+        "description": "",
+        "id": "get-test-method-with-all-logics;user-calls-web-service-test-to-check-the-logic-with-less-than-5",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 679100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "a test method request prepared with 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 36
+                }
+              ],
+              "location": "testStep.aTestMethodRequestPreparedWith(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31215900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "a user retrieves the test method",
+            "match": {
+              "location": "testStep.aUserRetrievesTheTestMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "testStep.the_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 360900,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "response includes this \"Calling lowest number method.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Calling lowest number method.",
+                  "offset": 24
+                }
+              ],
+              "location": "testStep.responseIncludesThis(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Get test method with all logics",
+    "description": "",
+    "id": "get-test-method-with-all-logics",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]
